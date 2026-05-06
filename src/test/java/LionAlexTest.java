@@ -42,7 +42,7 @@ public class LionAlexTest {
 
     @Test
     @DisplayName("Проверка,что метод getFriends() возвращает список друзей льва Алекса")
-    void getFriendsReturnsExpectedFriends() {
+    void getFriendsReturnAlexFriends() {
         List<String> actualFriends = lionAlex.getFriends();
         List<String> expectedFriends = List.of("зебра Марти", "бегемотиха Глория", "жираф Мелман");
         assertEquals(expectedFriends, actualFriends);
@@ -50,7 +50,7 @@ public class LionAlexTest {
 
     @Test
     @DisplayName("Проверка,что метод getPlaceOfLiving() класса LionAlex возвращает Нью-Йоркский зоопарк")
-    void getPlaceOfLivingReturnsZoo() {
+    void getPlaceOfLivingReturnNewYorkZoo() {
         assertEquals("Нью-Йоркский зоопарк", lionAlex.getPlaceOfLiving());
     }
 
