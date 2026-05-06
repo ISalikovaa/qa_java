@@ -21,7 +21,7 @@ public class LionParametrizedTest {
     @ParameterizedTest
     @MethodSource("whoDoesHaveMane")
     @DisplayName("Проверка, что метод doesHaveMane() класса Lion возвращает верное значение")
-    void getKittensParameterized(String sex, boolean expectedHasMane) throws Exception {
+    void doesHaveManeParameterized(String sex, boolean expectedHasMane) throws Exception {
         Feline feline = new Feline();
         Lion lion = new Lion(feline, sex);
         assertEquals(expectedHasMane, lion.doesHaveMane());

@@ -27,7 +27,7 @@ public class CatTest {
 
     @Test
     @DisplayName("Проверка метода getSound для класса Cat")
-    public void getSoundCatTest() { // сам тест
+    public void getSoundCat() { // сам тест
         String actualSound = cat.getSound();
         String expectedSound = "Мяу";
         assertEquals(expectedSound, actualSound);
