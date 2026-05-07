@@ -31,7 +31,7 @@ public class LionTest {
     }
 
     @Test
-    @DisplayName("Проверка, что конструктор выбрасывает ошибку при неправильном значении пола")
+    @DisplayName("Проверка, что конструктор выдает ошибку при неправильном значении пола")
     void constructorLionCheckExceptionForSex() {
         Exception exception = assertThrows(Exception.class, () -> new Lion(feline, "ОНО"));
         assertEquals("Используйте допустимые значения пола животного - самец или самка", exception.getMessage());
