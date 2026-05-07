@@ -21,7 +21,7 @@ public class FelineParametrizedTest {
 
     @ParameterizedTest
     @MethodSource("countKittens")
-    @DisplayName("Проверка, что метод getKittens(int count) класса Feline возвращает то что передано")
+    @DisplayName("Проверка, что метод getKittens(int count) класса Feline верно возвращает переданное значение")
     void getKittensParameterized(int input, int expected) {
         Feline feline = new Feline();
         assertEquals(expected, feline.getKittens(input));
