@@ -27,7 +27,6 @@ public class LionAlexTest {
         lionAlex = new LionAlex(feline);
     }
 
-
     @Test
     @DisplayName("Проверка,что метод getKittens() класса LionAlex возвращает 0")
     void getKittensDefault() {
